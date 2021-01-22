@@ -25,9 +25,13 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        Made With ❤️ by
         {` `}
-        <a href="https://www.linkedin.com/in/vinay-nb">Vinay Bhat</a>
+       <a href="https://www.linkedin.com/in/vinay-nb">linkedin</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/vinay_nb7">twitter</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/vinay-nb">github</a>
+        &nbsp;&nbsp;&nbsp;
       </footer>
     </div>
   )
