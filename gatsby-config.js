@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Vinay Tech Blog`,
+    title: `Vinay Tech Blogs`,
     author: {
       name: `Vinay Bhat.`,
       summary: `Software Engineer in making, I love to write tech blogs.`
@@ -61,7 +61,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `vinay tech blog`,
-        short_name: `GatsbyJS`,
+        short_name: `vb`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
