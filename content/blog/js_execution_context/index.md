@@ -6,12 +6,12 @@ description: "Working of JavaScript Under the hood"
 
 In this blog we will discusss about<br/>
 
-1. What is execution context?<br/>
-2. What makes JavaScript single threaded and synchronous? <br/>
-3. How code is executed in JavaScript?
-   <br/><br/>
-   **1. What is execution context?** <br/>
-   _Execution context is an container where all the code is executed._ <br/>
+1\. What is execution context?<br/>
+2\. What makes JavaScript single threaded and synchronous? <br/>
+3\. How code is executed in JavaScript?
+<br/><br/>
+**1. What is execution context?** <br/>
+_Execution context is an container where all the code is executed._ <br/>
 
 This execution context is divided into 2 parts.<br/>
 1\. Memory or variable envirnoment.<br/>
