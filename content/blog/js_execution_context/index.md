@@ -45,17 +45,47 @@ Consider the below code snippet to understand these phases.
 3.    var add_of_num = a + b;
 4.      return add_of_num;
 5. }
-6.var res = add(2, -1);
-
+6. var res = add(2, -1);
+7. console.log(res)
 ```
 
 JavaScript scans the entire code snippet first. In this phase it encounters a varibale in line 1. _Then it reserves the memory for a variable `number` and assigns the special value as `undefined`_. Then in line number 2 it encounter a _`function()` with name `add` and it stores the entire code for the `function() add`_. And in line 6 it reserves the memory for _`res variable` and assigns value a special value as `undefined`_<br/>
 
 After completing the first phase execution context looks like this. <br/><br/>
-![Memory creation phase](phase_memory.png "Memory creation phase")
+![Memory creation phase](phase1.png "Memory creation phase")
 
 **2\. Code execution phase.**<br/>
-_In this phase it assigns the value `2` to the identifier `number` in the line 1_. After finishing line 1 execution it moves to the next line, here it encounters function and JavaScript finds nothing to execute here.Then it moves to the line number 6 and _finds a function name, and invokes the function._ <br/>
-Now in _global execution context a new execution context is created inside the code component of global execution context._ This new execution context will again divided into 2 parts guess what? :sunglasses: <br/>
+_In this phase it assigns the value `2` to the identifier `number` in the line 1_. After finishing line 1 execution it moves to the next line, here it encounters function and JavaScript finds nothing to execute here.Then it moves to the line number 6 and _finds a function name, and invokes the function._
+
+After completing above process execution context looks like this.
+![Code execution phase](phase2_code.png "Code execution phase")
+<br/>
+Now in _global execution context a new execution context is created inside the code component of global execution context._ This new execution context will again divided into 2 parts!! guess what? 🤔 <br/>
 1\. Memory component<br/>
 2\. Code component<br/>
+
+This function again goes through 2 phase of execution.<br/>
+1\. Memory creation phase<br/>
+2\. Code execution phase<br/>
+
+1\. Memory creation phase<br/>
+_In the memory creation phase identifier will get the special value called as `undefined` i.e in the line 2 function paramteres `a, b` will get the value as `undefined`_. This process is continued for the variable `add_of_num` also.<br/>
+
+After the above process execution context looks something like this.
+
+![Function memory creation phase](func_execu.png "Function memory creation phase")
+
+2\. Code execution phase<br/>
+Next phase is code execution phase. _In this phase `variable a, b` will get the value as `2, -1`_. Now control moves to the line number 3 in this line code is executed i.e _computation will take place inside the code component of the local execution context. And computed value is stored in variable_ `add_of_num`. In the line number 4 it _encounters a special keyword `return`, now this statement tells the JavaScript to return the controller back to the variable where this `function add()` is invoked._ Once it encounters a special keyword `return` in line number 4 code component will search for the variable `add_of_num` in the memory component replaces `undefined` value with computed value.
+
+After code execution phase of a function execution context looks something like this.
+
+![Function code execution phase](cod_exec_func.png "Function code execution phase")
+
+Once function encounters special _keyword `return` it deletes the local execution context which is created for a `function add()`._ Now controll moves to the return statement of global execution context, i.e line number 6. And `res` will now hold
+the value as 1 and it prints the result to the `console`. _Once JavaScript finds all code is executed it deletes the global execution context._
+
+_Happy Coding !!!_
+
+Reference <br/>
+[Namaste JavaScript](https://youtu.be/pN6jk0uUrD8)
