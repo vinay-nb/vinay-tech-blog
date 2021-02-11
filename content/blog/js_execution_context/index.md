@@ -14,13 +14,13 @@ In this blog we will discusss about<br/>
 _Execution context is a container where all the code is executed._ <br/>
 
 This execution context is divided into 2 parts.<br/>
-1\. Memory or variable environment.<br/>
-2\. Code or thread of execution. <br/>
+1\. Memory component or variable environment.<br/>
+2\. Code component or thread of execution. <br/>
 
-**1\.Memory component or variable environment**<br/>
+**1\. Memory component or variable environment.**<br/>
 In memory part where all the variables and functions are stored in the form of key-value pairs something like dictionary in python.
 
-**2\.Code component or thread of execution.**<br/>
+**2\. Code component or thread of execution.**<br/>
 In this code part where the actual code resides. These codes are executed in sequential manner. JavaScript executes the code line by line.
 
 ![Execution Context](execution_context.png "Execution Context")
@@ -68,22 +68,26 @@ This function again goes through 2 phase of execution.<br/>
 1\. Memory creation phase<br/>
 2\. Code execution phase<br/>
 
-1\. Memory creation phase<br/>
+1\. Memory creation phase.<br/>
 _In the memory creation phase identifier will get the special value called as `undefined` i.e in the line 2 function paramteres `a, b` will get the value as `undefined`_. This process is continued for the variable `add_of_num` also.<br/>
 
 After the above process execution context looks something like this.
 
 ![Function memory creation phase](func_execu.png "Function memory creation phase")
 
-2\. Code execution phase<br/>
+2\. Code execution phase.<br/>
 Next phase is code execution phase. _In this phase `variable a, b` will get the value as `2, -1`_. Now control moves to the line number 3 in this line code is executed i.e _computation will take place inside the code component of the local execution context. And computed value is stored in variable_ `add_of_num`. In the line number 4 it _encounters a special keyword `return`, now this statement tells the JavaScript to return the controller back to the variable where this `function add()` is invoked._ Once it encounters a special keyword `return` in line number 4 code component will search for the variable `add_of_num` in the memory component replaces `undefined` value with computed value.
 
 After code execution phase of a function execution context looks something like this.
 
 ![Function code execution phase](cod_exec_func.png "Function code execution phase")
 
-Once function encounters special _keyword `return` it deletes the local execution context which is created for a `function add()`._ Now controll moves to the return statement of global execution context, i.e line number 6. And `res` will now hold
-the value as 1 and it prints the result to the `console`. _Once JavaScript finds all code is executed it deletes the global execution context._
+Once function encounters special _keyword `return` it deletes the local execution context which is created for a `function add()`._ Now controll moves to the global execution context, i.e line number 6. And `res` will now hold the value as 1 and it prints the result to the `console`. _Once JavaScript finds all code is executed it deletes the global execution context._
+
+To move the control back and forth JavaScript makes use of a very _familiar data structure called as Call Stack._<br/>
+
+**Call Stack.**<br/>
+Whenever the _JavaScript starts executing the code, a global execution context is created this global execution context is pushed inside the call stack_. Then JavaScript starts scannig the program. In this line number 6 in the above code snippet a `function add()` is invoked, as we have already discussed function will have separate execution context, this local execution context is again pushed on to the call stack when the function encounters a special keyword `return` inside the `function add()` this local execution context is popped from the call stack. And control is again moved to global execution context. _Once JavaScript completes the code execution this global execution context is popped from the call stack_ this how JavaScript makes use of stack data structure.
 
 _Happy Coding !!!_
 
