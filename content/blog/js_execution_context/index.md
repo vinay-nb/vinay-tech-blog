@@ -11,7 +11,7 @@ In this blog we will discusss about<br/>
 3\. How code is executed in JavaScript?
 <br/><br/>
 **1. What is execution context?** <br/>
-_Execution context is an container where all the code is executed._ <br/>
+_Execution context is a container where all the code is executed._ <br/>
 
 This execution context is divided into 2 parts.<br/>
 1\. Memory or variable environment.<br/>
@@ -27,7 +27,7 @@ In this code part where the actual code resides. These codes are executed in seq
 
 **2. What makes JavaScript single threaded and synchronous?**<br/>
 _JavaScript is synchronous and single-threaded language._ In the code component JavaScript executes code line by line and it follows the certain pattern.
-It means second line of code is excuted after completing the execution of first line.<br/>
+It means second line of code is executed after completing the execution of first line.<br/>
 
 **3. How code is executed in JavaScript?**<br/>
 Code execution in JavaScript takes place in execution context. This execution phase is divided into 2 phases.
