@@ -14,14 +14,14 @@ In this blog we will discusss about<br/>
 _Execution context is an container where all the code is executed._ <br/>
 
 This execution context is divided into 2 parts.<br/>
-1\. Memory or variable envirnoment.<br/>
+1\. Memory or variable environment.<br/>
 2\. Code or thread of execution. <br/>
 
-**1\.Memory component or variable envirnoment**<br/>
+**1\.Memory component or variable environment**<br/>
 In memory part where all the variables and functions are stored in the form of key-value pairs something like dictionary in python.
 
 **2\.Code component or thread of execution.**<br/>
-In this code part where the actual code resides. These codes are executed in sequetial manner. JavaScript executes the code line by line.
+In this code part where the actual code resides. These codes are executed in sequential manner. JavaScript executes the code line by line.
 
 ![Execution Context](execution_context.png "Execution Context")
 
