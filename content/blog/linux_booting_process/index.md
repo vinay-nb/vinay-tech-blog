@@ -1,15 +1,15 @@
 ---
-title: Booting process of the Linux Operating System
+title: Booting process of the Linux
 date: "2021-04-15T01:03:37.121Z"
-description: "Booting process of Linux operating system under the hood"
+description: "Booting process of Linux kernel under the hood"
 ---
 
-In this blog, I am going to walk you through the booting process of the Linux operating system. </br>
+In this blog, I am going to walk you through the booting process of the Linux kernel. </br>
 
 **Linux Operating System**</br>
 It a family of free and open-source, operating systems based upon the _linux kernel_ and was developed by _Linus Torvalds_. The first version of the Linux kernel was published on _September 17, 1991_.
 
-Mainly there are 6 steps in which the linux operating boots up.<br/>
+Mainly there are 6 steps in which the Linux boots up.<br/>
 1\. BIOS<br/>
 2\. MBR<br/>
 3\. GRUB<br/>
@@ -60,7 +60,7 @@ We will look into each of these 6 steps in detail now.
 
 **5\. Init**
 
-- It decides the run level of the Linux operating system.
+- It decides the run level of the Linux kernel.
 - Run level is found in `/etc/inittab`
 - Run level decides which are the programs to be run during the booting of the system.
 - There are various run levels.<br/>
@@ -88,7 +88,7 @@ We will look into each of these 6 steps in detail now.
 - This folder location various for different linux based distribution.
 - Usually these programs start with “S” or “K”, “S” stands for _start up_ program executed during booting of the system and “K” stands for _kill_ which is executed during shutting down the system.
 
-This is how the Linux operating system boots up.
+This is how the Linux kernel boots up.
 
 _Happy Coding !!!_
 
