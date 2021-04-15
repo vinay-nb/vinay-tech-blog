@@ -32,12 +32,12 @@ We will look into each of these 6 steps in detail now.
 - This MBR is located in the first sector of the bootable disk.
 - It’s usually found in `/dev/hda` or `/dev/sda` it depends on the hardware you are using.
 - Total size of Master Boot Record is _512 bytes_.
-- There 4 components in MBR.
-  1\.Primary Boot Loader, of size 2 Bytes.
-  2\.Partition table information, of size 446 Bytes.
-  3\.MBR validation check, of size 64 Bytes.
-- It contains the information about GRUB.
-- Main function of MBR is to _load to execute the GRUB bootloader_.
+- There 4 components in MBR.<br/>
+  1\. Primary Boot Loader, of size 2 Bytes.<br/>
+  2\. Partition table information, of size 446 Bytes.<br/>
+  3\. MBR validation check, of size 64 Bytes.<br/>
+- It contains the information about GRUB.<br/>
+- Main function of MBR is to _load and execute the GRUB bootloader_.
 
 **3\. GRUB/GNU GRUB (Grand Unified Boot Loader)**
 
