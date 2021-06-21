@@ -7,7 +7,7 @@ description: "Booting process of Linux kernel under the hood"
 In this blog, I am going to walk you through the booting process of the Linux kernel. </br>
 
 **Linux Operating System**</br>
-It a family of free and open-source, operating systems based upon the _linux kernel_ and was developed by _Linus Torvalds_. The first version of the Linux kernel was published on _September 17, 1991_.
+It is a family of free and open-source, operating systems based upon the _linux kernel_ and was developed by _Linus Torvalds_. The first version of the Linux kernel was published on _September 17, 1991_.
 
 Mainly there are 6 steps in which the Linux boots up.<br/>
 1\. BIOS<br/>
