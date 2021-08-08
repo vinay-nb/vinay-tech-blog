@@ -1,4 +1,4 @@
-#vinay-tech-blog
+# vinay-tech-blog
 
 view website - https://vinaytechblogs.netlify.app/
 
