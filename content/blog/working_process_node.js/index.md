@@ -21,3 +21,5 @@ Let’s compare it with some other server like tomcat, it has some 200 threads r
 Asynchronous: In non-blocking, we have discussed only request but what if client 1 process is completed and the server sends request here comes asynchronous concept. The movement when we get the response node will execute the call back function (event loop). Then sends the response back to the client.
 
 Node is preferred when we have more I/O related operations. As it lags when it is CPU intensive work because of single-threaded. Node.js can handle up to 34k transactions per second with a latency of 2 to 300 milliseconds.
+
+[Buy my products at Amazon](https://www.amazon.in/hz/wishlist/ls/1E3IEQOE8QNI0?ref_=wl_share&tag=vinaytech7-21)

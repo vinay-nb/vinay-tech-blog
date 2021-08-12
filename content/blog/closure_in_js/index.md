@@ -117,3 +117,5 @@ References <br/>
 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)<br/>
 [Hitesh Choudhary](https://www.youtube.com/user/hiteshitube)<br/>
 [Stackoverflow](https://stackoverflow.com/questions/2728278/what-is-a-practical-use-for-a-closure-in-javascript)
+
+[Buy my products at Amazon](https://www.amazon.in/hz/wishlist/ls/1E3IEQOE8QNI0?ref_=wl_share&tag=vinaytech7-21)

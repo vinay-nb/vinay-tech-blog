@@ -16,3 +16,5 @@ Everything in the BlockChain is referred as a transaction. BlockChain records tr
 
 **How BlockChain Keeps Data Secure** <br/>
 In the BlockChain first node is called as **Genesis Block**. Consider example of 5 nodes. First Block is Genesis Block. Now each block will contain hash of the previous block(Like a Reversed Linked List) . If Data of one Block is altered then value of hash changes. For example if anyone tries to alter the data of 2 block then the hash value of 1 block changes. (What is hash value and hash functions will be explained in upcoming blogs). Once the transaction is verified and added to Block it is not possible to change the data. Till today there is no one is able to hack this network on protocol level. This is how the BlockChain makes it difficult to tamper the data.
+
+[Buy my products at Amazon](https://www.amazon.in/hz/wishlist/ls/1E3IEQOE8QNI0?ref_=wl_share&tag=vinaytech7-21)
